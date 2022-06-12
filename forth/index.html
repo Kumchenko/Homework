@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS First</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="#">
+                Mylogo
+            </a>
+            <nav class="navigation">
+                <ul class="navigation__row">
+                    <li class="navigation__element"><a href="#">Главная</a></li>
+                    <li class="navigation__element"><a href="#">Портфолио</a></li>
+                    <li class="navigation__element"><a href="#">Услуги</a></li>
+                    <li class="navigation__element"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <a class="phone" href="tel:+74959825364">
+                +7 (495) 982-53-64
+            </a>
+        </div>
+    </header>
+
+    <section>
+        <div class="container main">
+            <h1>
+                Главный заголовок страницы
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
+            <div class="main__cards">
+                <div class="main__card">
+                    <h4 class="card__header">
+                        Это тестовая карточка #1
+                    </h4>
+                    <p class="card__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    </p>
+                    <a href="#" class="card__more">
+                        Узнать больше
+                    </a>
+                </div>
+                <div class="main__card main__card_radial">
+                    <h4 class="card__header">
+                        Это тестовая карточка #2
+                    </h4>
+                    <p class="card__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    </p>
+                    <a href="#" class="card__more">
+                        Узнать больше
+                    </a>
+                </div>
+                <div class="main__card main__card_more">
+                    <h4 class="card__header">
+                        Это тестовая карточка #3
+                    </h4>
+                    <p class="card__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    </p>
+                    <a href="#" class="card__more">
+                        Узнать больше
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container second">
+            <div class="request">
+                <h2 class="request__header">
+                    Заголовок второй секции
+                </h2>
+                <form class="request__form" action="#">
+                    <input type="text" name="name" placeholder="Имя" required>
+                    <input type="email" name="email" placeholder="E-mail">
+                    <input type="tel" name="tel" placeholder="Телефон" required>
+                    <textarea name="message" placeholder="Сообщение"></textarea>
+                    <button type="submit">Отправить</button>
+                    <p class="request__secured">Ваши данные надежны защищены</p>
+                </form>
+            </div>
+            <div class="tile">
+                <h3 class="desc__header">
+                    Заголовок карточки
+                </h3>
+                <div class="tile__desc">
+                    <div class="tile__left">
+                        <p class="tile__p">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. anim id est laborum.
+                        </p>
+                        <img src="img/screenshot.png" alt="Screenshot" class="tile__img">
+                    </div>
+                    <div class="tile__right">
+                        <p class="tile__p">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. anim id est laborum. em ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">
+                Все права защищены
+            </p>
+            <button type="button" class="footer__button">
+                Контурная кнопка
+            </button>
+            <button type="button" class="footer__button footer__button_radial">
+                Контурная кнопка
+            </button>
+            <p class="footer__label">
+                Отрывок текста на белом фоне
+            </p>
+            <p class="footer__done">
+                Готово! Я молодец :)
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
