@@ -196,12 +196,6 @@ header a {
     background-color: #184c6b;
 }
 
-/* .request__form > textarea::-webkit-scrollbar-button {
-    background-image: url(../img/Arrow-down.svg);
-    background-size: cover;
-    background-position: center;
-} */
-
 .request__form > button {
     background-color: #ebce0d;
     color: #272c2f;
