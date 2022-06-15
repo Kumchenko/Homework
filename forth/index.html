@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS First</title>
+    <title>MYLOGO</title>
 	<link rel="stylesheet" href="css/style.css">
+    <meta property="og:title" content="MYLOGO — Главная страница">
+	<meta property="og:description" content="Сайт нашей компании">
+	<meta property="og:type" content="article">
+	<!-- <meta property="og:image" content="" > -->
+	<meta property="og:site_name" content="MYLOGO">
 </head>
 <body>
     <header>
@@ -79,9 +84,9 @@
                 </h2>
                 <form class="request__form" action="#">
                     <input type="text" name="name" placeholder="Имя" required>
-                    <input type="email" name="email" placeholder="E-mail">
-                    <input type="tel" name="tel" placeholder="Телефон" required>
-                    <textarea name="message" placeholder="Сообщение"></textarea>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="tel" name="tel" placeholder="Телефон">
+                    <textarea name="message" placeholder="Сообщение" required></textarea>
                     <button type="submit">Отправить</button>
                     <p class="request__secured">Ваши данные надежны защищены</p>
                 </form>
