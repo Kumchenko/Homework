@@ -1,0 +1,284 @@
+/* ========= */
+/* base tags */
+/* ========= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    color: #0e1b3e;
+}
+
+h2 {
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 0.52px;
+    padding-left: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    letter-spacing: 0.44px;
+}
+
+.separator {
+    width: 72px;
+    height: 3px;
+    background-color: #2d63eb;
+}
+
+.merits, .answers {
+    list-style: none;
+}
+
+.title {
+    font-weight: 700;
+    letter-spacing: 0.32px;
+}
+
+.contact-btn {
+    color: #ffffff;
+    background-color: #2d63eb;
+    padding: 19px 32px 19px 34px;
+    border-radius: 28px;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.26px;
+    border: none;
+}
+
+/* header tags */
+
+.header {
+    background-image: linear-gradient(-31deg, #1148d3 0%, #4a7dfc 100%);
+    color: #ffffff;
+    box-shadow: inset 0 -25px 80px rgba(0, 0, 0, 0.341); 
+}
+
+.header__motto {
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 168px;
+    max-width: 605px;
+    letter-spacing: 0.54px;
+    line-height: 38px;
+    padding-left: 10px;
+}
+
+.header__contact-btn {
+    border: 1px solid #ffffff;
+    margin: 20px 0 169px;
+}
+
+.header__drop {
+    background-image: url(../img/arrow.png);
+    width: 25px;
+    height: 16px;
+}
+
+.header > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 69px 0 64px;
+}
+
+/* section about */
+
+.about {
+    padding: 108px 0 122px;
+}
+
+.about .desc {
+    display: flex;
+    gap: 72px;
+    margin-top: 78px;
+}
+
+.missions-tab {
+    max-width: 467px;
+}
+
+.missions-tab__text {
+    color: #0e1b3e;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+}
+
+.missions-tab__text:first-of-type {
+    margin-bottom: 24px;
+}
+
+.missions-tab__text_highlighted {
+    color: #2d63eb;
+    border-bottom: 1px dotted #2d63eb;
+}
+
+.missions-tab__separator {
+    margin: 24px 0 32px;
+}
+
+.merits-tab__separator {
+    margin: 24px 0 40px;
+}
+
+.merit {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.merit:not(:last-of-type) {
+    margin-bottom: 24px;
+}
+
+.merit__img-wrapper {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    background-color: #2d63eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.merit__title {
+    color: #2d63eb;
+    margin-top: 3px;
+}
+
+.merit__desc {
+    opacity: 0.48;
+    color: #2f383b;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    margin-top: 6px;
+}
+
+/* section why */
+
+.why {
+    padding-bottom: 229px;
+}
+
+.answers {
+    display: flex;
+    margin-top: 66px;
+    gap: 106px;
+}
+
+.answer_first {
+    margin-left: 64px;
+}
+
+.answer_second {
+    margin-left: 46px;
+}
+
+.answer__marker {
+    margin: 0 auto;
+    text-align: center;
+    color: #ffa200;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid #ffa200;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 73px;
+}
+
+.answer__marker_active {
+    color: #ffffff;
+    background-color: #ffa200;
+}
+
+.answer__title {
+    color: #0e1b3e;
+    margin-top: 16px;
+}
+
+/* section methinks */
+
+.methinks {
+    padding-bottom: 113px;
+}
+
+.methinks__title {
+    text-align: center;
+}
+
+.methinks__desc {
+    max-width: 413px;
+    color: #0e1b3e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.28px;
+    margin: 19px auto 25px;
+}
+
+.methinks__contact-btn {
+    margin: 0 auto;
+    display: block;
+}
+
+/* footer */
+
+.footer {
+    background-color: #06319e;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.26px;
+}
+
+.footer > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 47px 0 50px;
+}
+
+.footer__copyright, .footer__name {
+    opacity: 0.55;
+}
+
+.footer__name {
+    margin-left: 77px;
+}
+
+.footer__privacy {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.26px;
+    border-bottom: 1px dotted #fff;
+    text-decoration: none;
+}
+
