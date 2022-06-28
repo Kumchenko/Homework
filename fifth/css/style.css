@@ -38,12 +38,6 @@ h3 {
     letter-spacing: 0.44px;
 }
 
-.separator {
-    width: 72px;
-    height: 3px;
-    background-color: #2d63eb;
-}
-
 .merits, .answers {
     list-style: none;
 }
@@ -58,13 +52,24 @@ h3 {
     background-color: #2d63eb;
     padding: 19px 32px 19px 34px;
     border-radius: 28px;
-    font-family: Tahoma;
+    font-family: inherit;
     font-size: 13px;
     font-weight: 700;
     line-height: 15px;
     text-transform: uppercase;
     letter-spacing: 0.26px;
     border: none;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    background-color: #1148d3;
+}
+
+.contact-btn:active {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    background-color: #1148d3;
 }
 
 /* header tags */
@@ -79,7 +84,7 @@ h3 {
     font-size: 27px;
     font-weight: 700;
     text-align: center;
-    margin-top: 168px;
+    margin-top: 165px;
     max-width: 605px;
     letter-spacing: 0.54px;
     line-height: 38px;
@@ -120,6 +125,20 @@ h3 {
     max-width: 467px;
 }
 
+.withSeparator {
+    margin-bottom: 59px;
+}
+
+.withSeparator::after {
+    content: '';
+    width: 72px;
+    height: 3px;
+    background-color: #2d63eb;
+    position: absolute;
+    left: 0px;
+    bottom: -27px;
+}
+
 .missions-tab__text {
     color: #0e1b3e;
     font-size: 15px;
@@ -135,20 +154,25 @@ h3 {
 .missions-tab__text_highlighted {
     color: #2d63eb;
     border-bottom: 1px dotted #2d63eb;
-}
-
-.missions-tab__separator {
-    margin: 24px 0 32px;
-}
-
-.merits-tab__separator {
-    margin: 24px 0 40px;
+    text-decoration: none;
 }
 
 .merit {
     display: flex;
     align-items: center;
     gap: 25px;
+}
+
+.merits-tab__title.withSeparator {
+    margin-bottom: 64px;
+}
+
+.merit:hover .merit__img-wrapper {
+    background-color: #1148d3;
+}
+
+.merit:hover .merit__title {
+    color: #1148d3;
 }
 
 .merit:not(:last-of-type) {
@@ -212,7 +236,7 @@ h3 {
     line-height: 73px;
 }
 
-.answer__marker_active {
+.answer:hover > .answer__marker{
     color: #ffffff;
     background-color: #ffa200;
 }
